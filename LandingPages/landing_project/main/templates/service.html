@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block content %}
+<section class="text-center my-5" data-aos="fade-up">
+  <h1 class="display-4 fw-bold mb-4">RoboDeliver in 3 Easy Steps</h1>
+  <p class="lead text-secondary">
+    Designed specifically for university students living abroad.
+  </p>
+</section>
+
+<div class="row g-4 text-center">
+  <div class="col-md-4" data-aos="fade-right">
+    <div class="p-4 bg-white shadow-soft rounded h-100">
+      <h5 class="mb-3">📱 Order via App</h5>
+      <p class="text-muted">
+        Easily select products from nearby stores using our intuitive app.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+    <div class="p-4 bg-white shadow-soft rounded h-100">
+      <h5 class="mb-3">🤖 Robotic Delivery</h5>
+      <p class="text-muted">
+        Our autonomous robots navigate campus securely and swiftly.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+    <div class="p-4 bg-white shadow-soft rounded h-100">
+      <h5 class="mb-3">🎁 Receive & Enjoy</h5>
+      <p class="text-muted">
+        Convenient alerts let you know when your order has arrived.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center my-5" data-aos="zoom-in" data-aos-delay="400">
+  <a href="{% url 'interest_form' %}" class="btn btn-primary btn-lg"
+    >Get Started</a
+  >
+</div>
+{% endblock %}

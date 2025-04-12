@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block content %}
+<section class="text-center my-5" data-aos="fade-up">
+  <h1 class="display-4 fw-bold mb-4">Empowering Campus Life</h1>
+  <p class="lead text-secondary">
+    Revolutionizing student life with autonomous robotic deliveries, bringing
+    convenience directly to campus.
+  </p>
+</section>
+
+<div class="row g-4">
+  <div class="col-md-6" data-aos="zoom-in">
+    <div class="p-4 bg-white shadow-soft rounded text-center h-100">
+      <h4 class="mb-3">🚀 Our Mission</h4>
+      <p class="text-muted">
+        Deliver essential goods quickly and sustainably, simplifying life for
+        university students.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+    <div class="p-4 bg-white shadow-soft rounded text-center h-100">
+      <h4 class="mb-3">🌿 Sustainability</h4>
+      <p class="text-muted">
+        Reducing environmental impact through efficient and eco-friendly robotic
+        logistics.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center my-5" data-aos="fade-up" data-aos-delay="300">
+  <a href="{% url 'service' %}" class="btn btn-outline-primary btn-lg"
+    >Learn More</a
+  >
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+<div class="col-lg-6 mx-auto" data-aos="fade-up">
+  <h1 class="mb-4 fw-bold text-center">Connect With Us</h1>
+  <form method="POST" class="p-4 bg-white shadow-soft rounded">
+    {% csrf_token %}
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      class="form-control mb-3"
+      required
+    />
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      class="form-control mb-3"
+      required
+    />
+    <input
+      type="text"
+      name="university"
+      placeholder="Your University"
+      class="form-control mb-3"
+    />
+    <textarea
+      name="message"
+      placeholder="How can we help you?"
+      class="form-control mb-3"
+      rows="4"
+    ></textarea>
+    <button type="submit" class="btn btn-success w-100">Submit</button>
+  </form>
+</div>
+{% endblock %}
