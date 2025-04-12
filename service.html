@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Service</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f9fafc;
+        color: #333;
+      }
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      footer {
+        background-color: #f3f5f9;
+      }
+      .shadow-soft {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .shadow-soft:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Masar Robotics</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <!-- Hero Section -->
+      <section class="text-center my-5" data-aos="fade-up">
+        <h1 class="display-4 fw-bold mb-4">RoboDeliver in 3 Easy Steps</h1>
+        <p class="lead text-secondary">
+          Designed specifically for university students living abroad.
+        </p>
+      </section>
+
+      <!-- Service Descriptions -->
+      <div class="row g-4 text-center">
+        <!-- Order via App -->
+        <div class="col-md-4" data-aos="fade-right">
+          <div class="p-4 bg-white shadow-soft rounded h-100">
+            <h5 class="mb-3">📱 Order via App</h5>
+            <p class="text-muted">
+              Easily select products from nearby stores using our intuitive app.
+              Convenient, fast, and secure.
+            </p>
+          </div>
+        </div>
+        <!-- Robotic Delivery -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="p-4 bg-white shadow-soft rounded h-100">
+            <h5 class="mb-3">🤖 Robotic Delivery</h5>
+            <p class="text-muted">
+              Our autonomous robots navigate campus securely and swiftly,
+              ensuring timely deliveries.
+            </p>
+          </div>
+        </div>
+        <!-- Receive & Enjoy -->
+        <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+          <div class="p-4 bg-white shadow-soft rounded h-100">
+            <h5 class="mb-3">🎁 Receive & Enjoy</h5>
+            <p class="text-muted">
+              Convenient alerts let you know when your order has arrived,
+              allowing for easy collection at your convenience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center my-5" data-aos="zoom-in" data-aos-delay="400">
+        <a href="interest_form.html" class="btn btn-primary btn-lg"
+          >Get Started</a
+        >
+      </div>
+    </main>
+
+    <footer class="py-4 text-center">
+      <div class="container">
+        &copy; 2025 Masar Robotics. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+  </body>
+</html>
